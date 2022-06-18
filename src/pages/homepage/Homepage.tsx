@@ -18,9 +18,9 @@ const HomePage: React.FC = () => {
         {
             img: "./assets/img/slider-img.png",
         },
-        {
-            img: "./assets/img/slider-img.png",
-        },
+        // {
+        //     img: "./assets/img/slider-img.png",
+        // },
         // {
         //     img: "./assets/img/slider-img.png",
         // },
