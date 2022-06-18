@@ -3,3 +3,14 @@
   font-family: 'Poppins', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
+
+
+/* Home <======================================== */
+
+.home-bg{
+  background-image: url(./assets/img/home-bg.png);
+  height: 80vh;
+  padding: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
