@@ -7,10 +7,64 @@
 
 /* Home <======================================== */
 
-.home-bg{
+.home-bg {
   background-image: url(./assets/img/home-bg.png);
   height: 80vh;
   padding: 70px;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.home-text h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+
+.home-text h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 82px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.home-text p {
+  width: 559px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #B0B0B0;
+}
+
+.home-text button {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #4A7FF3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 40px;
+  padding: 16px 20px;
+}
+
+.slick-slide{
+  width: 100% !important;
+}
+.slick-track{
+  width: 100% !important;
 }
