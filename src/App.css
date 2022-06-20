@@ -137,7 +137,54 @@
   padding: 22px;
 }
 
+.add-balance .tooltiptext P {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
 .add-balance:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+.add-balance-icon {
+  padding: 15px 15px;
+  align-items: center;
+  border: 1px solid #746C77;
+  display: flex;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+  border-radius: 10px;
+}
+
+.input-group-text {
+  background-color: transparent !important;
+  color: #FFFFFF !important;
+  border: 2px solid #636363 !important;
+  border-radius: 10px 0px 0px 10px !important;
+}
+
+.input-group>.form-control,
+.input-group>.form-select {
+  background-color: transparent !important;
+  color: #FFFFFF !important;
+  border: 2px solid #636363 !important;
+  border-radius: 0px 10px 10px 0px !important;
+  box-shadow: none !important;
+}
+
+.wallet-management {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 25px;
+  width: 100%;
+  padding: 19px !important;
+  background: #4A7FF3 !important;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.27);
+  border-radius: 10px !important;
 }
