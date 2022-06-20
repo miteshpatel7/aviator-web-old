@@ -4,9 +4,10 @@ import { Dropdown, DropdownButton, Form, InputGroup, Modal } from 'react-bootstr
 interface Props {
     onHide: () => void;
     show?: boolean;
+    openLoginModel: () => void;
 }
 
-const Registration: React.FC<Props> = ({ show, onHide }) => {
+const Registration: React.FC<Props> = ({ show, onHide, openLoginModel }) => {
     return (
         <Modal
             show={show}
@@ -41,6 +42,7 @@ const Registration: React.FC<Props> = ({ show, onHide }) => {
                         <label htmlFor="" className='ms-2'>I agree with 1win website </label>
                     </div>
                     <button className='registra-btn'>Registration</button>
+                    <p>Already have an account? <span onClick={() =>openLoginModel()}>Login</span></p>
                 </div>
             </Modal.Body>
         </Modal>
