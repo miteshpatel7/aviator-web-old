@@ -110,13 +110,13 @@
   color: #FFFFFF !important;
 }
 
-.add-balance {
+/* .add-balance {
   position: relative;
   display: inline-block;
-}
+} */
 
 .add-balance .tooltiptext {
-  visibility: hidden;
+  visibility: visible;
   width: 400px;
   background: rgba(0, 0, 0, 0.6);
   border: 1px solid #EBEFFD;
@@ -127,11 +127,11 @@
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  top: 72px;
-  left: 50%;
-  transform: translate(-50%);
+  top: 94px;
+  left: 60%;
+  /* transform: translate(-60%); */
   margin-left: -60px;
-  opacity: 0;
+  opacity: 1;
   transition: all linear 0.3s;
   z-index: 5;
   padding: 22px;
@@ -147,10 +147,10 @@
   margin-bottom: 0px;
 }
 
-.add-balance:hover .tooltiptext {
+/* .add-balance:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
-}
+} */
 
 .add-balance-icon {
   padding: 15px 15px;
