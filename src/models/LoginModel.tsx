@@ -20,6 +20,7 @@ const LoginModel: React.FC<Props> = ({ show, onHide, openRegisterModal, openForg
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
                 className="p-5 registration-model"
+                backdrop="static"
             >
                 <Modal.Header closeButton className='registration-model-header'>
                 Log In

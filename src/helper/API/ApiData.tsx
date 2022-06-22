@@ -1,7 +1,7 @@
 import AuthStorage from '../AuthStorage';
 import { API } from '../../config/API/api.config';
 
-export const BaseURL = API.endpoint + '/';
+export const BaseURL = API.endpoint;
 
 
 const axios = require('axios').default;
@@ -98,7 +98,7 @@ export const ApiPost = (type: string, userData: any) => {
 export const ApiPostNoAuth = (type: string, userData: any) => {
     const s = type.includes('?') ? '&' : '?';
     return new Promise((resolve, reject) => {
-        axios.post(`${BaseURL}${type}${s}lang=${AuthStorage.getLang()}`, userData, getHttpOptions({ ...defaultHeaders, isAuth: false }))
+        axios.post(`${BaseURL}${type}`, userData, getHttpOptions({ ...defaultHeaders, isAuth: false }))
             .then((responseJson: apiResponse) => {
                 resolve(responseJson.data);
             })

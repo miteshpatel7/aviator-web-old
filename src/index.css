@@ -105,6 +105,7 @@ code {
   border: 2px solid #636363;
   border-radius: 10px;
   background: transparent;
+  color: #ffffff;
   /* margin-top:15px ; */
 }
 
@@ -126,14 +127,6 @@ code {
   width: 20px !important;
   height: 20px !important;
 }
-
-input[type="checkbox"]:checked::after {
-  background: red;
-  color: green;
-  content: "\2713";
-  text-align: center;
-}
-
 
 
 .registra-btn {

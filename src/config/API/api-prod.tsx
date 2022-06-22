@@ -1,10 +1,10 @@
 const protocol = 'http';
-const host = '192.168.1.48';
-const port = '5000';
+const host = '192.168.1.4';
+const port = '5002';
 const trailUrl = 'api/v1';
 
 const hostUrl = `${protocol}://${host}${port ? ':' + port : ''}/`;
-const endpoint = `${protocol}://${host}${(port ? ':' + port : '')}/${trailUrl}`;
+const endpoint = `${protocol}://${host}${(port ? ':' + port : '')}/`;
 
 export default {
     protocol: protocol,

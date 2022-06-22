@@ -14,3 +14,7 @@ export const SET_OTHER_USER = "SET_OTHER_USER";
 export const CHAT_ID = "CHAT_ID";
 
 export const GET_NOTIFICATION = "GET_NOTIFICATION";
+
+export const REGISTER = "REGISTER";
+export const REGISTER_LOADING = "REGISTER_LOADING";
+export const REGISTER_ERROR = "REGISTER_ERROR";
