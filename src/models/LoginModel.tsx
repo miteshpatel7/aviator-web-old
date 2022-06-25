@@ -11,7 +11,18 @@ interface Props {
 }
 
 const LoginModel: React.FC<Props> = ({ show, onHide, openRegisterModal, openForgotPass }) => {
-    const [registrationModel, setRegistrationModel] = useState(false)
+
+    const [login, setLogin] = useState({
+        email: "",
+        password: "",
+    })
+
+    const handleChange = (e: any, name: string) => {
+        if (name === "email" || name === "password") {
+            setLogin({ ...login, [name]: e.target.value })
+        }
+    }
+
     return (
         <>
             <Modal
@@ -23,12 +34,12 @@ const LoginModel: React.FC<Props> = ({ show, onHide, openRegisterModal, openForg
                 backdrop="static"
             >
                 <Modal.Header closeButton className='registration-model-header'>
-                Log In
+                    Log In
                 </Modal.Header>
                 <Modal.Body>
                     <div className="registration-model-body">
-                        <input type="text" placeholder='Indian Rupee' className='mt-3' />
-                        <input type="text" placeholder='Password' className='mt-3' />
+                        <input type="text" placeholder='E-mail / Phone' className='mt-3' value={login.email} onChange={(e) => handleChange(e, "email")} />
+                        <input type="text" placeholder='Password' className='mt-3' value={login.password} onChange={(e) => handleChange(e, "password")} />
                         <h6 onClick={() => openForgotPass()}>Forgot Password?</h6>
                         <button className='registra-btn btn-bg-color'>Log In</button>
                         <p>Still no account? <span onClick={() => openRegisterModal()}>Register</span></p>

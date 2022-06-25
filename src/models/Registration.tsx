@@ -74,10 +74,10 @@ const Registration: React.FC<Props> = ({ show, onHide, openLoginModel }) => {
 
     useEffect(() => {
         if (registerData && registerData.status === 200) {
-            // dispatch({
-            //     type: REGISTER,
-            //     payload: []
-            // })
+            dispatch({
+                type: REGISTER,
+                payload: []
+            })
             onHide()
         }
     }, [registerData])
